@@ -1,0 +1,97 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    top: 0px;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    background-color: aliceblue;
+}
+ul{ 
+    padding-left: 0px; 
+}
+nav #desktop{
+    float: right;
+    margin: 0px 30px;
+    padding: 0px 0px;
+}
+nav #desktop li{
+    padding: 0px 10px;
+    display: inline-block;
+    margin: 30px 0px;
+    
+}
+nav #desktop li a{
+    padding: 0px 10px;
+    display: block;
+}
+nav img{
+    width: 60px;
+    height: 60px;
+    margin: 10px 40px;
+    
+}
+nav #phone{
+    display: none;
+}
+div{
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+    height: 1000px;
+    border-bottom: solid
+}
+#menu{
+    background-color: none;
+    border: none;
+    display: none;
+}
+.skew{
+    display: block;
+    -ms-transform: skewY(-20deg); /* IE 9 */
+    -webkit-transform: skewY(-20deg); /* Safari */
+    transform: skew(15deg); /* Standard syntax */
+    background-color: aquamarine;
+}
+.unskew{
+    display: inline-block;
+    -ms-transform: skewY(0deg); /* IE 9 */
+    -webkit-transform: skewY(0deg); /* Safari */
+    transform: skew(-15deg);/* Standard syntax */  
+}
+@media only screen and (max-width: 600px) {
+    nav #phone li{
+        display: block;
+        margin: 10px 0px;
+        padding: 30px 0px;
+        text-align: center;
+    }
+    nav #phone li a{
+        text-decoration: none;
+        padding: 30px 30%;
+    }
+    nav #desktop li{
+        display: none;
+    }
+    nav #phone{
+        position: fixed;
+        background-color: aliceblue;
+        width: 100%;
+        top: 60px;
+        height: 100vh;
+    }
+    #menu{
+        display: block;
+        float: right;
+        margin: 20px 10px;
+        padding: 10px 30px;
+    }
+    nav img{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+    
+}
